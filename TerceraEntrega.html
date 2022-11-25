@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title class="tituloPrincipal">CONTROL DE INVENTARIO</title>
+    <link rel="stylesheet" href="terceraEntrega.css">
+</head>
+
+<body>
+    <h2>CONTROL DE INVENTARIO</h2>
+
+    <section>
+        <h3>Producto a modificar</h3>
+        <label for="producto">Producto</label>
+        <label id="menu"></label>
+        <button id="botonConsultar">Consultar</button>
+        <label id="contenedorBotonConsultar"></label>
+    </section>
+
+    <section class="moduloCargaStock">
+        <h3>Modulo de carga de stock</h3>
+        <p>Esta sección agrega la cantidad indicada al stock actual</p>
+        <label for="stock" class="etiquetas">Stock</label>
+        <input id="stock" name="stock" type="number">
+
+        <section>
+            <button id="botonStock">Agregar Stock</button>
+        </section>
+    </section>
+
+    <section class="moduloActualizacionPrecio">
+        <h3>Módulo de actualización de precio</h3>
+        <label for="precio">Precio Nuevo</label>
+        <input id="precio" name="precio" type="number">
+
+        <section>
+            <button id="botonActualizarPrecio">Actualizar Precio</button>
+        </section>
+    </section>
+
+    <section id="seccionTabla">
+        <h1>Detalle de productos modificados</h1>
+        <table id="tablaFront">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                </tr>
+        </table>
+        <label id="contenedorTabla"></label>
+    </section>
+
+    <section id="seccionTablaLS">
+        <h4>Productos modificados en última sesión</h4>
+        <table id="tablaFrontLS">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                </tr>
+        </table>
+        <label id="contenedorTablaLS"></label>
+    </section>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="TerceraEntrega.js"></script>
+
+</body>
+
+</html>
