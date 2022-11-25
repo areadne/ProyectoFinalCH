@@ -105,11 +105,11 @@ axios
     // ----- Fin: traer información del LS -----//
 
     botonStock.onclick = () => {
-      ingresarProductoNuevo();
+      agregarStock();
       guardarEnLS();
     };
 
-    function ingresarProductoNuevo() {
+    function agregarStock() {
       for (const producto of productos) {
         if (menu.value == producto.producto) {
           let sumaDeStock = producto.stock + Number(ingresarStock.value);
